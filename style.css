@@ -1,0 +1,41 @@
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+article {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-row: span 4;
+  background-color: beige;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.dig {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: beige;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: beige;
+  text-align: center;
+  margin-top: 5rem;
+  border-top: 1px solid black;
+}
+.hjælp {
+  text-align: center;
+  margin-bottom: 5rem;
+}
