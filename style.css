@@ -3,11 +3,17 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
+a {
+  background-color: beige;
+  padding: 2rem;
+  text-align: center;
+  width: 80%;
+}
 article {
   display: grid;
   grid-template-columns: subgrid;
   grid-row: span 4;
-  background-color: beige;
+  background-color: gray;
 }
 
 img {
@@ -43,4 +49,13 @@ footer {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
 }

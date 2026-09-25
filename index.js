@@ -7,8 +7,8 @@ fetch(endpoint)
   .then(visData);
 
 function visData(json) {
-  console.log(json);
   json.forEach((element) => {
-    catlistecontainer.innerHTML += `<a href=productdetails.html?cat=${element.catergory}> ${element.category}</a>`;
+    console.log(element);
+    catlistecontainer.innerHTML += `<a href=productlist.html?cat=${element.category}> ${element.category}</a>`;
   });
 }

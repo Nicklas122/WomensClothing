@@ -1,5 +1,5 @@
 const id = new URLSearchParams(window.location.search).get("id");
-console.log(id);
+// console.log(id);
 const endpoint = `https://kea-alt-del.dk/t7/api/products/${id}`;
 
 const product = document.querySelector("#product");
@@ -16,7 +16,7 @@ fetch(endpoint)
 function visData(element) {
   console.log(element);
   product.innerHTML += `
-    <a href="productdetails.html?id=${element.id}">
+<a href="productdetails.html?id=${element.id}">
             <article class="card">
               <img src=https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp alt="produktbillede" />
                 <h2>${element.productdisplayname}</h2>
